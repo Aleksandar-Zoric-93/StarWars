@@ -1,0 +1,12 @@
+<div class="planetsInfo"> 
+  <button class="displayPlanets" (click)="onToggleDetails()">Display Planets</button>
+  <p> Learn about the planets in Star Wars and what each planet can offer  </p>
+</div>
+<div class="top" *ngIf="showPlanets">
+<h2>Planets</h2>
+<ul>
+  <li *ngFor="let c of planets">
+    {{ c.name }}
+  </li>
+</ul>
+</div>

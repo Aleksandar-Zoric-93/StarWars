@@ -1,0 +1,12 @@
+<div class="peopleInfo"> 
+  <button class="displayPeople" (click)="onToggleDetails()">Display People</button>
+  <p> Learn about the characters in Star Wars and what each character can offer  </p>
+</div>
+<div class="top" *ngIf="showPeople">
+<h2>People</h2>
+<ul>
+  <li *ngFor="let c of customers">
+    {{ c.name }}
+  </li>
+</ul>
+</div>
