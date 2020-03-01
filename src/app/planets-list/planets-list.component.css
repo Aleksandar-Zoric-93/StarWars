@@ -43,3 +43,7 @@ h2 {
 	position:relative;
 	top:1px;
 }
+
+ul {
+	list-style: none;
+}
